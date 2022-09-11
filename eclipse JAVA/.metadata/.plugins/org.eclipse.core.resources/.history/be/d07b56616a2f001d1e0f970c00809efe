@@ -1,0 +1,41 @@
+
+package org.easy;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+		File dir = new File("Azad");
+		dir.mkdir();
+		dir = new File("Azad\\radhe.txt");
+
+		// true is for append in order to avoid override
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(dir, true))) {
+			bw.write("Azad\nAnkit\nAishwarya\nBharati\nBhagabat\nSiri");
+			bw.newLine();
+
+			System.out.println("Writing to the txt file is completed");
+			bw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("Writting on txt is not done!!");
+		}
+
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("Azad\\radhe.txt"));
+			String line = br.readLine();
+			while (line != null) {
+				System.out.println(line);
+			}
+		} catch (Exception e) {
+			System.out.println("Some error occured");
+		}
+	}
+
+}

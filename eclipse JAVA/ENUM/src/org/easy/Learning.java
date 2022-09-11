@@ -1,0 +1,5 @@
+package org.easy;
+
+public enum Learning {
+	COREJAVA, JSPANDSERVELET, GENERICS, MULTITHREADING, COLLECTIONS
+}

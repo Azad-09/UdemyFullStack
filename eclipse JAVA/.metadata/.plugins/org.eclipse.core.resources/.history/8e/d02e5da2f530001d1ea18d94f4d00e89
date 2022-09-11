@@ -1,0 +1,27 @@
+package org.easy;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class WriteObject {
+
+	public static void main(String[] args) {
+		Vehicle bike = new Vehicle("Bike", 787898);
+		Vehicle car = new Vehicle("Car", 998965);
+		
+		try(FileOutputStream fos = new FileOutputStream("easy\\vehicle.dat")){
+			try(ObjectOutputStream obj = new ObjectOutputStream(fos)){
+				
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("FileNotFoundException");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("IOException");
+		}
+	}
+
+}
