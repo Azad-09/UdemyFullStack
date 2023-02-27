@@ -1,5 +1,5 @@
 <%-- JSP import is done using directives  --%>
-<%@page import="java.util.Date, org.easy.UserDefined "%>
+<%@page import="java.util.Date,org.easy.servlets.UserDefined"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>

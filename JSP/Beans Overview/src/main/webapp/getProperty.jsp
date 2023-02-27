@@ -7,8 +7,9 @@
 <title>Get Property</title>
 </head>
 <body>
-	<jsp:useBean id="User" class="org.easy.beans.User" scope="session"></jsp:useBean>
-	
+<%-- scope= application is applicable for all the browser. Changes in any browser will reflect in all --%>
+<%-- scope= page will reflect changes on that particular page/ JSP  --%>
+	<jsp:useBean id="User" class="org.easy.beans.User" scope="application"></jsp:useBean>
 	First Name: <jsp:getProperty property="firstName" name="User"/> <br>
 	Last Name: <jsp:getProperty property="lastName" name="User"/>
 </body>

@@ -1,0 +1,24 @@
+<users> (parent)
+
+	<user> (node)
+		<name>Radhe</name> (branch)
+		<gender>Male</gender> (branch)
+		<age>32</age> (branch)
+	</user>
+	<user> (node)
+		<name>Mohan</name> (branch)
+		<gender>Male</gender> (branch)
+		<age>30</age> (branch)
+	</user>
+	<user> (node)
+		<name>Sita</name> (branch)
+		<gender>Female</gender> (branch)
+		<age>27</age> (branch)
+	</user>
+	<user> (node)
+		<name>Ravan</name> (branch) 
+		<gender>Male</gender> (branch)
+		<age>42</age> (branch)
+	</user>
+
+</users>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+
+	<user>
+		<name>Radhe</name>
+		<gender>Male</gender>
+		<age>32</age>
+	</user>
+	<user>
+		<name>Mohan</name>
+		<gender>Male</gender>
+		<age>30</age>
+	</user>
+	<user>
+		<name>Sita</name>
+		<gender>Female</gender>
+		<age>27</age>
+	</user>
+	<user>
+		<name>Ravan</name>
+		<gender>Male</gender>
+		<age>42</age>
+	</user>
+
+</users>
